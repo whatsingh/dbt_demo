@@ -1,1 +1,1 @@
-select * from {{ ref('countrycodes') }}
+select * from {{ ref('countrycodes.csv') }}
