@@ -3,6 +3,10 @@ version: 2
 models:
   - name: orders
     columns:
-      - name: order_id
+      - name: customer_id
         tests:
           - not_null
+      - name: customer_id
+        tests:
+          - accepted_values:
+              values: [0, 1, 2, 3, 4]
