@@ -3,8 +3,8 @@ version: 2
 models:
   - name: orders
     columns:
-      - name: customer_id
-        tests:
+      - name: number_of_orders
+      tests:
       - dbt_utils.expression_is_true:
           expression: "number_of_orders >= 0"
    
