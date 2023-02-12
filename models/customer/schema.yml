@@ -4,7 +4,12 @@ models:
   - name: orders
     columns:
       - name: number_of_orders
-      tests:
-      - dbt_utils.expression_is_true:
-          expression: "number_of_orders >= 0"
+        tests:
+        - dbt_utils.expression_is_true:
+            expression: "number_of_orders >= 0"
+
+            version: 2
+
+
+
    
