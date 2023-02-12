@@ -12,3 +12,6 @@ models:
       - name: last_name
         tests:
           - not_null
+      - name: number_of_orders
+        tests:
+          - >= 0
