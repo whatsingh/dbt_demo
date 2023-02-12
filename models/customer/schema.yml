@@ -3,10 +3,16 @@ version: 2
 models:
   - name: orders
     columns:
-      - name: number_of_orders
+      - name: customer_id
         tests:
-        - dbt_utils.expression_is_true:
-            expression: "number_of_orders < 0"
+          - not_null
+          - unique
+      - name: first_name
+        tests:
+          - not_null
+      - name: last_name
+        tests:
+          - not_null
 
 
 
