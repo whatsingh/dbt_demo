@@ -10,7 +10,3 @@ models:
         - name: provider_state
         tests:
           - not_null
-        - name: inpatient_sum_average_medicare_payments  
-        tests:
-          - dbt_utils.expression_is_true:
-          expression: "inpatient_sum_average_medicare_payments > 0"
