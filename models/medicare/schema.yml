@@ -11,4 +11,3 @@ models:
         tests:
            - accepted_values:
               values: ['MA']
-              quote: false
