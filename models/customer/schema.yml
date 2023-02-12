@@ -9,4 +9,4 @@ models:
       - name: customer_id
         tests:
           - accepted_values:
-              values: [0, 1, 2, 3, 4]
+              values: [0, 1, 2, 3, 4, 5]
