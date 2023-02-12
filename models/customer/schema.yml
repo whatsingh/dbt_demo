@@ -5,4 +5,5 @@ models:
     columns:
         - name: number_of_orders
         tests:
-          - >= 0
+          - accepted_values:
+              values: [0, 1, 2, 3, 4]
