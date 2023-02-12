@@ -7,4 +7,3 @@ models:
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'returned','return_pending']
-
