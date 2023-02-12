@@ -6,7 +6,7 @@ models:
       - name: number_of_orders
         tests:
         - dbt_utils.expression_is_true:
-            expression: "number_of_orders > -1"
+            expression: "number_of_orders < 0"
 
 
 
