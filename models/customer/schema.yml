@@ -3,7 +3,6 @@ version: 2
 models:
   - name: orders
     columns:
-      - name: status
+      - name: customer_id
         tests:
-          - accepted_values:
-              values: ['placed', 'shipped', 'completed', 'returned','return_pending']
+          - not_null
