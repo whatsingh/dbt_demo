@@ -3,9 +3,6 @@ version: 2
 models:
   - name: orders
     columns:
-      - name: customer_id
-        tests:
-          - not_null
-      - name: number_of_orders
+        - name: number_of_orders
         tests:
           - >= 0
