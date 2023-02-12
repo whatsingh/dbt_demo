@@ -8,8 +8,6 @@ models:
         - dbt_utils.expression_is_true:
             expression: "number_of_orders >= 0"
 
-            version: 2
-
 
 
    
