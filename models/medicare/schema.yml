@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: medicaresummary
+    columns:
+      - name: provider_id
+        tests:
+          - not_null
+          - unique   
+      - name: provider_state
+        tests:
+           - accepted_values:
+              values: ['MA']
+              quote: false
