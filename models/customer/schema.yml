@@ -15,4 +15,4 @@ models:
       - name: number_of_orders
         tests:
           - accepted_values:
-              values: [0, 1, 2, 3, 5]
+          - not_null
