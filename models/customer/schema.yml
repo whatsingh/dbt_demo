@@ -9,4 +9,4 @@ models:
       - name: number_of_orders
         tests:
           - accepted_values:
-              values: [0, 1, 2, 3, 4, 5]
+              values: [0, 1, 2, 3, 5]
