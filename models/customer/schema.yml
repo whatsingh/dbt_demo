@@ -6,7 +6,9 @@ models:
       - name: customer_id
         tests:
           - not_null
-      - name: number_of_orders
+      - name: first_name
         tests:
-          - accepted_values:
-              values: [0, 1, 2, 3, 5]
+          - not_null
+      - name: last_name
+        tests:
+          - not_null
