@@ -10,4 +10,4 @@ models:
       - name: provider_state
         tests:
            - accepted_values:
-              values: ['MA']
+              values: ('MA', 'RI', 'NH', 'ME', 'VT')
