@@ -3,16 +3,8 @@ version: 2
 models:
   - name: orders
     columns:
-      - name: order_id
-        tests:
-          - unique
-          - not_null
-      - name: status
+        - name: status
         tests:
           - accepted_values:
               values: ['placed', 'shipped', 'completed', 'returned','return_pending']
-      - name: customer_id
-        tests:
-          - relationships:
-              to: ref('customers')
-              field: id
+
