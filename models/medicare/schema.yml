@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: medicare
+  - name: medicaresummary
     columns:
       - name: provider_id
         tests:
