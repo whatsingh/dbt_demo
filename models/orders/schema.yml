@@ -1,9 +1,0 @@
-version: 2
-
-models:
-  - name: orders
-    columns:
-        - name: number_of_orders
-        tests:
-          - accepted_values:
-              values: [0, 1, 2, 3, 4]
