@@ -7,6 +7,6 @@ models:
         tests:
           - not_null
           - unique   
-        - name: provider_state
+      - name: provider_state
         tests:
           - not_null
