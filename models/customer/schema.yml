@@ -6,6 +6,9 @@ models:
       - name: customer_id
         tests:
           - not_null
+       - name: customer_id
+        tests:
+          - unique
       - name: first_name
         tests:
           - not_null
