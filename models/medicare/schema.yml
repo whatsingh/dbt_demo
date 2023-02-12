@@ -10,3 +10,4 @@ models:
       - name: provider_state
         tests:
           - not_null
+          values: ['MA']
