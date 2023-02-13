@@ -1,3 +1,5 @@
+version 2
+
 with orders as (
 
     select
