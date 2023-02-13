@@ -1,12 +1,11 @@
 version 2
 
-with orders as (
+with customers as (
 
     select
-        id as order_id,
-        user_id as customer_id,
-        order_date,
-        status
+        id as customer_id,
+        first_name,
+        last_name
 
   --  from `dbt-tutorial`.jaffle_shop.customers
     from {{source('jaffle_shop','customers')}}
