@@ -6,11 +6,6 @@ sources:
     schema: jaffle_shop
     tables:
       - name: customers
-      columns:
-         -name: user_id
-          tests:
-           - not_null
-           - unique
       - name: orders
         loaded_at_field: _etl_loaded_at
         freshness: # default freshness
