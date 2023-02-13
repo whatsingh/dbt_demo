@@ -3,8 +3,8 @@ payments as (
     select * from {{ref('stg_payment')}}
 )
 select 
-    order_id,
+    orderid,
     sum(amount) total_amount
     from payments
-    group by order_id
+    group by orderid
     having total_amount < 0
