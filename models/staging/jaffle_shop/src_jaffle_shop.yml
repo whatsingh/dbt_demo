@@ -27,6 +27,7 @@ models:
       - name: last_name
         tests:
           - not_null
+
 - name: stg_orders
     columns:
       - name: orderid
@@ -36,12 +37,8 @@ models:
       - name: status
         tests:
           - accepted_values:
-            values:
-            -shipped
-            -returned
-            -completed
-            -return_pending
-    
-   
-
-    
+              values:
+                - shipped
+                - returned
+                - completed
+                - return_pending
