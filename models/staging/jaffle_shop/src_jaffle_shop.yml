@@ -6,7 +6,7 @@ sources:
     schema: jaffle_shop
     tables:
       - name: customers
-        columns:
+      columns:
          -name: id
           tests:
            - not_null
