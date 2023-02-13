@@ -26,10 +26,9 @@ models:
         tests:
           - not_null
 
-models:
 - name: stg_orders
     columns:
-      - name: order_id
+      - name: status
         tests:
-          - not_null
-          - unique
+           - accepted_values:
+              values: [placed, shipped, completed, returned, return_pending]
