@@ -7,7 +7,7 @@ sources:
     tables:
       - name: customers
       columns:
-         -name: id
+         -name: user_id
           tests:
            - not_null
            - unique
