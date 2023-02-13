@@ -30,7 +30,7 @@ models:
 
 - name: stg_orders
     columns:
-      - name: orderid
+      - name: id
         tests:
           - not_null
           - unique
@@ -39,6 +39,7 @@ models:
           - accepted_values:
               values:
                 - shipped
+                - placed
                 - returned
                 - completed
                 - return_pending
