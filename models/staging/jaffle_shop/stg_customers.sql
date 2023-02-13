@@ -12,4 +12,4 @@ with orders as (
     from {{source('jaffle_shop','customers')}}
 )
 
-select * from orders
+select * from customers
