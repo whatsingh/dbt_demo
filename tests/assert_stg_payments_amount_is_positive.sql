@@ -1,6 +1,6 @@
 with
 payments as {
-    select * from ref{{ref('stg_payment')}}
+    select * from {{ref('stg_payment')}}
 }
 select 
     order_id,
