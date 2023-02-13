@@ -1,7 +1,7 @@
 with
-payments as {
+payments as (
     select * from {{ref('stg_payment')}}
-}
+)
 select 
     order_id,
     sum(amount) total_amount
