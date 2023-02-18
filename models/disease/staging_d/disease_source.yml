@@ -10,7 +10,7 @@ sources:
 models:
   - name: stg_disease_total
     columns:
-      - name: TOTAL_FOR_STATE
+      - name: STATE
         tests:
           - not_null
          
