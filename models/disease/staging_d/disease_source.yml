@@ -5,7 +5,6 @@ sources:
     database: bigquery-public-data
     schema: usa_contagious_disease
     tables:
-     - name: project_tycho_reports
-
+      - name: project_tycho_reports
 
          
