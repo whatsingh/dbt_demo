@@ -13,5 +13,15 @@ models:
       - name: state
         tests:
           - not_null
+      - name: state
+        tests:
+         - accepted_values:
+            values: 
+            - MA
+            - CA
+            - WY
+  
+
+
 
  
