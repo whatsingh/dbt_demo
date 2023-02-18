@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: disease
+  - name: usa_contagious_disease
     database: bigquery-public-data
     schema: usa_contagious_disease
     tables:
