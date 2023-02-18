@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: disease
+    database: bigquery-public-data
+    schema: usa_contagious_disease
+    tables:
+     - name: project_tycho_reports
+
+    
