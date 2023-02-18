@@ -7,3 +7,10 @@ sources:
     tables:
      - name: project_tycho_reports
 
+models:
+  - name: stg_disease_total
+    columns:
+      - name: TOTAL_FOR_STATE
+        tests:
+          - not_null
+         
