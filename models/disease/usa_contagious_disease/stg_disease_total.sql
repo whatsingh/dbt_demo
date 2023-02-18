@@ -1,3 +1,5 @@
+{{ config(materialized='table') }}
+
 with
     total_disease as (
         select state, disease, sum(cast(cases as numeric)) total_cases
