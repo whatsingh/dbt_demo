@@ -8,7 +8,7 @@ sources:
      - name: project_tycho_reports
 
 models:
-  - name: stg_disease_total
+  - name: disease_total
     columns:
       - name: STATE
         tests:
