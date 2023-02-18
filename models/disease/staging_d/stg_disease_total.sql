@@ -2,7 +2,7 @@
 {{ config(materialized='table') }}
 
 WITH TOTAL_DISEASE AS 
-(SELECT STATE,disease,sum(cast (cases as numeric) ) total_cases FROM source {{('usa_contagious_disease','project_tycho_reports')}}
+(SELECT STATE,disease,sum(cast (cases as numeric) ) total_cases FROM {{source ('usa_contagious_disease','project_tycho_reports')}}
 where cases <> '\\N' 
 GROUP BY STATE,disease),
 TOTAL_PER_STATE  AS
