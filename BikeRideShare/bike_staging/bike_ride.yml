@@ -2,7 +2,7 @@
 version: 2
 
 models:
-    - name: bike_ride
+    - name: stg_rider
       description: "A bike ride analysis"
       columns:
           - name: trip_id
