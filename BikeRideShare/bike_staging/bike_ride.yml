@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+    - name: bike_ride
+      description: "A bike ride analysis"
+      columns:
+          - name: trip_id
+            description: "The primary key for this table"
+            tests:
+                - unique
+                - not_null
