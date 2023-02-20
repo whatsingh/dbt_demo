@@ -1,3 +1,5 @@
+versin: 2
+
 sources:
   - name: bike_rides
     database: bigquery-public-data
