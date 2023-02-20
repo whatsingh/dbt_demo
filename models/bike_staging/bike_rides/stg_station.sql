@@ -1,7 +1,7 @@
 with
     station as (
         select *
-        from `bigquery-public-data.austin_bikeshare.bikeshare_stations`
+        from {{source('bike_rides','bikeshare_stations')}} 
         where floor(station_id / 100) = 25
         limit 100
     )
