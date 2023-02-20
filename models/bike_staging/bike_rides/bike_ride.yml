@@ -1,5 +1,5 @@
 sources:
-  - name: bike_staging
+  - name: bike_rides
     database: bigquery-public-data
     schema: austin_bikeshare
     tables:
