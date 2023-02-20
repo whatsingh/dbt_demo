@@ -1,12 +1,12 @@
-
 version: 2
 
 sources:
-  - name: BikeRideShare
+  - name: bike_staging
     database: bigquery-public-data
     schema: austin_bikeshare
     tables:
       - name: bikeshare_trips
+      - name: bikeshare_stations
 
 models:
   - name: stg_rider
