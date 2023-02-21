@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: bike_rides
+    database: bigquery-public-data
+    schema: austin_bikeshare
+    tables:
+      - name: bikeshare_stations
+      - name: bikeshare_trips
+
+models:
+  - name: stg_rider
+    columns:
+      - name: trip_id
+        tests:
+          - not_null
+          - unique
+          
