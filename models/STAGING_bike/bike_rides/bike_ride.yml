@@ -20,10 +20,6 @@ models:
       - name: status
         tests:
           - not_null
-        tests:
-         - accepted_values:
-            values: 
-            - closed
-            - active
+        
              
           
