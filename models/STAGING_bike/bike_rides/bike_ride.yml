@@ -21,6 +21,7 @@ models:
   - name: stg_station
     columns:
       - name: station_id
+        description: 'where the bike was picked up'
         tests:
           - not_null
           - unique
