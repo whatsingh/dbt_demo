@@ -15,4 +15,10 @@ models:
         tests:
           - not_null
           - unique
+  - name: stg_station
+    columns:
+      - name: status
+        tests:
+          - not_null
+             
           
