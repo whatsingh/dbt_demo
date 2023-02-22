@@ -3,10 +3,13 @@ version: 2
 sources:
   - name: bike_rides
     database: bigquery-public-data
+    description: 'data showing bike ride usage'
     schema: austin_bikeshare
     tables:
       - name: bikeshare_stations
+        description: 'This table talks about the bike stations'
       - name: bikeshare_trips
+        description: 'This table talks about the actual rides/riders'
 
 models:
   - name: stg_rider
