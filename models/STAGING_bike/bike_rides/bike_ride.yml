@@ -21,9 +21,9 @@ models:
         tests:
           - not_null
           - accepted_values:
-            values: 
-            - closed
-            - active
+             values: 
+             - closed
+             - active
         
              
           
