@@ -12,6 +12,7 @@ sources:
         description: 'This table talks about the actual rides/riders'
 
 models:
+   
   - name: stg_rider
     columns:
       - name: trip_id
