@@ -36,8 +36,9 @@ models:
     # Applies to all files under models/example/
     example:
       materialized: view
-    # Applies to all files under models/bike_rides/
-    staging_bike:
-      materialized: table
       +schema: staging
+    MART_BikeRideShare:
+      materialized: table
+      +schema: staging1
+  
       
