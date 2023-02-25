@@ -1,6 +1,6 @@
 {{
   config(
-    materialized='INCREMENTAL'
+    materialized='incremental'
   )
 }}
 
