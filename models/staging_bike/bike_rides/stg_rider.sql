@@ -1,6 +1,6 @@
 {{
   config(
-    materialized='table'
+    materialized='incremental'
   )
 }}
 
@@ -14,7 +14,7 @@ with
             start_station_id station_id
         from {{source('bike_rides','bikeshare_trips')}} 
         where subscriber_type like '%Pass%'
-        limit 100
+        limit 50
     )
 select * from rider
 
