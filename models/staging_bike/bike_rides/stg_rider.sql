@@ -1,9 +1,3 @@
-{{
-  config(
-    materialized='ephemeral'
-  )
-}}
-
 with
     rider as (
         select
