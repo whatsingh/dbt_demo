@@ -40,9 +40,7 @@ models:
     MART_BikeRideShare:
       materialized: view
       +schema: staging1
-    staging_bike:
-      materialized: emphemeral
-      +schema: staging1
+    
     
   
       
