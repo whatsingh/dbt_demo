@@ -38,10 +38,9 @@ models:
       materialized: view
       +schema: staging
     MART_BikeRideShare:
-      materialized: table
+      materialized: view
       +schema: staging1
-    staging_bike:
-      materialized: table
-      +schema: staging1
+    
+    
   
       

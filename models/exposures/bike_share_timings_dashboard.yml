@@ -1,0 +1,18 @@
+version: 2
+
+exposures:
+  
+  - name: bike_share_timings_dashboard
+    type: dashboard
+    description: >
+      shows if a particular station needs a review or need to close down
+
+    depends_on:
+      - ref('stg_rider')
+      - ref('stg_station')
+      - ref('stg_total_time')
+      - source('bike_rides','bikeshare_trips')
+
+    owner:
+      name: par singh
+      email: newton9@live.com

@@ -1,9 +1,3 @@
-{{
-  config(
-    materialized='incremental'
-  )
-}}
-
 with
     rider as (
         select
