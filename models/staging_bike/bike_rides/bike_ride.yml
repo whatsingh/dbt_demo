@@ -27,6 +27,8 @@ models:
         tests:
           - not_null
           - unique
+          - dbt_utils.not_constant
+
       - name: status
         tests:
           - not_null
@@ -34,7 +36,17 @@ models:
              values: 
              - closed
              - active
+      - name: name
+        tests:
+          - dbt_utils.not_accepted_values:
+              values: ['Waller & 6th St.']
          
-        
-             
-          
+      - name: alternate_name        
+        tests:
+          - dbt_utils.not_null_proportion:
+              at_least: 0.02
+      - name: modified_date       
+        tests:
+          - dbt_utils.expression_is_true:
+              config:
+                where: "modified_date > '2018-12-31'"
