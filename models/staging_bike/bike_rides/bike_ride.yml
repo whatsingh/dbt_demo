@@ -49,4 +49,4 @@ models:
         tests:
           - dbt_utils.expression_is_true:
               config:
-                where: "modified_date > '2018-12-31'"
+                where: "modified_date > '2014-01-01'"
