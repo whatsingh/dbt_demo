@@ -28,6 +28,8 @@ models:
           - not_null
           - unique
           - dbt_utils.not_constant
+          - dbt_expectations.expect_column_value_lengths_to_equal:
+             value: 4
 
       - name: status
         tests:
@@ -45,8 +47,9 @@ models:
         tests:
           - dbt_utils.not_null_proportion:
               at_least: 0.02
-      - name: modified_date       
+      - name: modified_date 
         tests:
-          - dbt_utils.expression_is_true:
-              config:
-                where: "modified_date > '2021-01-01'"
+          - dbt_expectations.expect_column_values_to_be_in_type_list:
+              column_type_list: [date, datetime]
+              
+          
