@@ -1,6 +1,6 @@
 with final_trip as (
         select
-            split_part(trip_id,_,2) trip_id
+            trip_id
             subscriber_type,
             bikeid,
             duration_minutes,
