@@ -1,4 +1,4 @@
-with final_trip as (
+with odd_id as (
         select
             trip_id,
             subscriber_type,
@@ -11,6 +11,7 @@ with final_trip as (
                         else 'Need Review' end Review
         from {{ ref("stg_rider") }}
         inner join {{ ref("stg_total_time") }} using (station_id)
+        where mod(trip_id,2) != 0
     )
 select *
-from final_trip
+from odd_id
