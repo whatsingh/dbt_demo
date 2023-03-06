@@ -1,3 +1,5 @@
+-- station_id total_rental_time = 5744
+
 with final_trip as (
         select
             trip_id,
@@ -5,6 +7,7 @@ with final_trip as (
             bikeid,
             duration_minutes,
             total_minutes,
+            sum(total_minutes) over (partition by station_id) total_rental_time_by_station,
             stg_rider.station_id,
             case  when total_minutes > 500 then 'can be used as model'
             when total_minutes > 100 then 'Good'
@@ -14,3 +17,4 @@ with final_trip as (
     )
 select *
 from final_trip
+order by 6 desc
